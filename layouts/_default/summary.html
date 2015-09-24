@@ -1,0 +1,18 @@
+<h1 class="content-subhead">{{ .Date.Format "02 Jan 2006" }}</h1>
+<section class="post">
+  <header class="post-header">
+    <a href="{{ .Permalink }}" class="post-title">{{ .Title }}  {{ if .Draft }}:: DRAFT{{end}}</a>
+  </header>
+  
+  <div class="post-description">
+    <div class="excerpt">
+      {{ .Summary }}
+    </div>
+    {{ if .Truncated }}
+    <nav class="read-more-link">
+      <a class="button-small pure-button button-grey" href="{{ .Permalink }}">Read&nbsp;More&nbsp;<i class="fa fa-angle-double-right"></i></a>
+    </nav>
+    {{ end }}
+  </div>
+  
+</section>
