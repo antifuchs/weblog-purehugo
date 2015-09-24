@@ -108,6 +108,7 @@ h3 {
 
 .content {
     padding: 2em 1em 0;
+    /* max-width: 1080px; */
 }
 
 .post {
@@ -217,6 +218,12 @@ h3 {
         position: fixed;
         top: 0;
         bottom: 0;
+    }
+}
+
+@media (min-width: 80em) {
+    .content {
+        max-width: 1280px;
     }
 }
 
