@@ -185,6 +185,7 @@ h3 {
 .button-grey {
     background: rgb(61, 79, 93);
     color: #fff;
+    margin: 3px 0;
 }
 
 .button-xsmall {

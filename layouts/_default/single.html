@@ -30,9 +30,24 @@
                       {{ end }}
                     </p>
                     {{ end }}
+                    
+                    <div>
+                      <nav class="pagination-single">
+                        {{ if .Prev }}
+                        <a class="pure-button button-grey" href="{{ .Prev.Permalink }}" rel="next">
+                          <i class="fa fa-chevron-left"></i>&nbsp;{{ .Prev.Title }}
+                        </a>
+                        {{ end }}
+                        {{ if .Next }}
+                        <a class="pure-button button-grey" href="{{ .Next.Permalink }}" rel="prev">
+                          {{ .Next.Title }}&nbsp; <i class="fa fa-chevron-right"></i>
+                        </a>
+                        {{ end }}
+                      </nav>
+                    </div>
 
-                    {{ template "_internal/disqus.html" . }}
                 </section>
+                {{ template "_internal/disqus.html" . }}
             </div>
             {{ partial "footer.html" . }}
         </div>
