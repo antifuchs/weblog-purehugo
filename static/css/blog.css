@@ -12,7 +12,8 @@ specific font stacks to ensure the greatest OS/browser compatibility.
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
-    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;    
+    /* font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif; */
 }
 
 
@@ -25,8 +26,10 @@ a:focus {
     text-decoration: underline;
 }
 
+
 h3 {
     font-weight: 100;
+    border-bottom: 1px solid rgb(61, 79, 93);
 }
 
 /* LAYOUT CSS */
@@ -85,8 +88,8 @@ h3 {
     color: #fff;
     margin-top: 1em;
     /*letter-spacing: 0.05em;
-    text-transform: uppercase;
-     font-size: 85%; */
+    text-transform: uppercase; */
+    font-size: 85%;
     font-weight: bold;
     /* font-family: "Oxygen", sans-serif; */
 }
@@ -108,7 +111,6 @@ h3 {
 
 .content {
     padding: 2em 1em 0;
-    /* max-width: 1080px; */
 }
 
 .post {
@@ -129,6 +131,14 @@ h3 {
 .post-description {
     color: #444;
     line-height: 1.35em;
+}
+
+.post-description h2 {
+    border-bottom: 2px solid rgb(61, 79, 93);
+}
+
+.post-description h3 {
+    border-bottom: 1px solid rgb(61, 79, 93);
 }
 
 .post-description img {
