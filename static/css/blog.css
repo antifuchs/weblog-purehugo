@@ -102,7 +102,7 @@ h3 {
 .content-subhead {
     text-transform: uppercase;
     color: #444;
-    border-bottom: 1px solid rgb(61, 79, 93);
+    border-bottom: 2px solid rgb(61, 79, 93);
     padding: 0.4em 0;
     font-size: 80%;
     font-weight: 500;
@@ -130,17 +130,15 @@ h3 {
 }
 .post-description {
     color: #444;
-    line-height: 1.35em;
+    line-height: 1.6;
 }
 
 .post-description h2 {
     border-bottom: 2px solid rgb(61, 79, 93);
-    line-height: 1.4em;
 }
 
 .post-description h3 {
     border-bottom: 1px solid rgb(61, 79, 93);
-    line-height: 1.4em;
 }
 
 .post-description img {
