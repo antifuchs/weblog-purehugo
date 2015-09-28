@@ -214,6 +214,13 @@ h3 {
     font-size: 125%;
 }
 
+.amazlet-box {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding: 15px 15px 20px;
+    margin: 15px 0;
+}
+
 @media (min-width: 48em) {
     .content {
         padding: 2em 3em 0;
