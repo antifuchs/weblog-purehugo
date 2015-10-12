@@ -21,8 +21,10 @@
 
                     {{ if isset .Params "categories" }}
                     <p class="post-categories">
+                      <a href="/categories">
                       <i class="fa fa-tags"></i>
-                      Categories:&nbsp;
+                      Categories:
+                      </a>&nbsp;
                       {{ range .Params.categories }}
                       <a class="button-small pure-button button-grey" href="/categories/{{ . | urlize }}">
                         <i class="fa fa-tag"></i>
