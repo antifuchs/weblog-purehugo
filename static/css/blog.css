@@ -11,9 +11,7 @@ specific font stacks to ensure the greatest OS/browser compatibility.
 */
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-    /* Set your content font stack here: */
     font-family: "Avenir Next", Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-    /* font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif; */
 }
 
 
@@ -57,10 +55,7 @@ h3 {
 .brand-tagline {
     margin: 0;
 }
-/* .brand-title { */
-/*     text-transform: uppercase; */
-/*     font-family: "Oxygen", sans-serif; */
-/* } */
+
 .brand-title a{
     color:#fff;
 }
@@ -87,11 +82,8 @@ h3 {
     border: 2px solid rgb(176, 202, 219);
     color: #fff;
     margin-top: 1em;
-    /*letter-spacing: 0.05em;
-    text-transform: uppercase; */
     font-size: 85%;
     font-weight: bold;
-    /* font-family: "Oxygen", sans-serif; */
 }
 .nav-item a:hover,
 .nav-item a:focus {
@@ -120,7 +112,6 @@ h3 {
     font-size: 2em;
     color: #222;
     margin: 0.4em 0;
-    /* font-family: "Oxygen", sans-serif; */
     font-weight: bold;
 }
 .post-avatar {
@@ -145,12 +136,6 @@ h3 {
     max-width: 100%;
     height: auto;
 }
-
-/* .post-meta { */
-/*     color: #999; */
-/*     font-size: 90%; */
-/*     margin: 5px 0; */
-/* } */
 
 .post-category {
     margin: 0 0.1em;
