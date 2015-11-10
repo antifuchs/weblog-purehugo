@@ -8,9 +8,9 @@
         <div class="posts">
           <div class="post-description">
             <h2 class="post-title"><i class="fa fa-pencil-square-o"></i> Posts in {{ .Title }}</h2>
-            <ul class="main-list">
+            <ul class="main-list fa-ul">
               {{ range .Data.Pages }}
-              <li><a href="{{ .Permalink }}"><i class="fa fa-pencil"></i>&nbsp;{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a> {{ .Date.Format "2006-01-02"}}</li>
+              <li><a href="{{ .Permalink }}"><i class="fa-li fa fa-pencil"></i>{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a> {{ .Date.Format "2006-01-02"}}</li>
               {{ end }}
             </ul>
           </div>

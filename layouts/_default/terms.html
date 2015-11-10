@@ -9,11 +9,11 @@
       <div class="posts">
         <div class="post-description">
           <h2 class="post-title"><i class="fa fa-tags"></i> Archive of Posts, by {{ .Title }}</h2>
-          <ul class="main-list">
+          <ul class="main-list fa-ul">
             {{ $data := .Data }}
             {{ range $key, $value := .Data.Terms.Alphabetical }}
             <li><a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}">
-                <i class="fa fa-tag"></i>&nbsp;{{ $value.Name }}</a>
+                <i class="fa-li fa fa-tag"></i>{{ $value.Name }}</a>
               ({{ $value.Count }} entries.)</li>
             {{ end }}
           </ul>
