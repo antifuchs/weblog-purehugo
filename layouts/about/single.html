@@ -1,0 +1,45 @@
+{{ partial "header.html" . }}
+
+<div id="layout" class="pure-g">
+    {{ partial "sidebar.html" . }}
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead"><i class="fa fa-calendar"></i>&nbsp;{{ .Date.Format "2006-01-02"}}</h1>
+                <section class="post">
+                    <header class="post-header">
+
+                        <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
+
+                    </header>
+                    
+                    <div class="post-description">
+                        {{ .Content }}
+                    </div>
+
+                    {{ if isset .Params "categories" }}
+                    <p class="post-categories">
+                      <a href="/categories">
+                      <i class="fa fa-tags"></i>
+                      Categories:
+                      </a>&nbsp;
+                      {{ range .Params.categories }}
+                      <a class="button-small pure-button button-grey" href="/categories/{{ . | urlize }}">
+                        <i class="fa fa-tag"></i>
+                        {{ . }}</a>&nbsp;
+                      {{ end }}
+                    </p>
+                    {{ end }}
+                </section>
+                {{ template "_internal/disqus.html" . }}
+            </div>
+            {{ partial "footer.html" . }}
+        </div>
+    </div>
+</div>
+
+{{ partial "analytics.html" . }}
+</body>
+</html>
